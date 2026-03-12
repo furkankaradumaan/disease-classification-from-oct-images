@@ -11,7 +11,7 @@ from src import evaluate
 import yaml
 
 # Load configurations
-with open("../config.yaml", "r") as f:
+with open("config.yaml", "r") as f:
     config = yaml.safe_load(f)
 
 # Setup device agnostic code.
