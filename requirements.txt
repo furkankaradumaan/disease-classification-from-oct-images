@@ -1,0 +1,8 @@
+torch
+torchvision
+timm
+datasets
+sklearn
+tqdm
+matplotlib
+pyyaml
