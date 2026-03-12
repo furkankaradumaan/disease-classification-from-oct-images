@@ -2,11 +2,11 @@ import torch
 from torchvision import transforms
 from torch import nn
 
-import engine
-import data_setup
-import model_builder
-import save
-import evaluate
+from src import engine
+from src import data_setup
+from src import model_builder
+from src import save
+from src import evaluate
 
 import yaml
 
