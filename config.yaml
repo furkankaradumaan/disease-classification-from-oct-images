@@ -8,7 +8,7 @@ training:
   loss_fn: "cross-entropy-loss"
   optimizer: "adam"
   learning_rate: 0.0001
-  num_epochs: 15
+  num_epochs: 10
 
 model:
   model_name: "resnet18"
@@ -16,6 +16,6 @@ model:
 output:
   model_save_dir: "models"
   model_save_name: "resnet18.pth"
-  train_result_save_dir: "outputs/resnet18-train"
-  test_result_save_dir: "outputs/resnet18-evaluation"
+  train_output_save_dir: "outputs/resnet18-train"
+  test_output_save_dir: "outputs/resnet18-evaluation"
 
