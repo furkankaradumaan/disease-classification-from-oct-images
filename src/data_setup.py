@@ -1,7 +1,7 @@
 from torchvision import transforms
 from torch.utils.data import DataLoader, Dataset
 from datasets import load_dataset, DatasetDict
-from HFDatasetWrapper import HFDatasetWrapper
+from src.HFDatasetWrapper import HFDatasetWrapper
 
 def get_dataset(
     dataset_name: str,
