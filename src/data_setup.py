@@ -37,9 +37,9 @@ def create_datasets(dataset: DatasetDict,
     """
     train_data, val_data, test_data = dataset["train"], dataset["validation"], dataset["test"]
 
-    train_dataset = HFDatasetWrapper(train_data, train_transform)
-    val_dataset = HFDatasetWrapper(val_data, test_transform)
-    test_dataset = HFDatasetWrapper(test_data, test_transform)
+    train_dataset = HFDatasetWrapper(train_data, transform=train_transform)
+    val_dataset = HFDatasetWrapper(val_data, transform=test_transform)
+    test_dataset = HFDatasetWrapper(test_data, transform=test_transform)
 
     return train_dataset, val_dataset, test_dataset
 
