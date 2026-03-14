@@ -11,11 +11,10 @@ training:
   num_epochs: 10
 
 model:
-  model_name: "resnet18"
+  model_name: "convnext_tiny"
 
 output:
   model_save_dir: "models"
-  model_save_name: "resnet18.pth"
-  train_output_save_dir: "outputs/resnet18-train"
-  test_output_save_dir: "outputs/resnet18-evaluation"
-
+  model_save_name: "convnext_tiny.pth"
+  train_output_save_dir: "outputs/convnext_tiny-train"
+  test_output_save_dir: "outputs/convnext_tiny-evaluation"
