@@ -1,3 +1,6 @@
+import argparse
+from pathlib import Path
+
 import torch
 from torchvision import transforms
 from torch import nn
@@ -10,8 +13,14 @@ from src import evaluate
 
 import yaml
 
+parser = argparse.ArgumentParser(prog="Disease Classification From OCT Images")
+parser.add_argument("--config_path", "-cp", type=Path, default="config.yaml")
+args = parser.parse_args()
+
+config_path: Path = args.config_path
+
 # Load configurations
-with open("config.yaml", "r") as f:
+with config_path.open(mode="r") as f:
     config = yaml.safe_load(f)
 
 # Setup device agnostic code.
